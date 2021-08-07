@@ -5,7 +5,7 @@ import lombok.Data;
 
 import javax.annotation.sql.DataSourceDefinition;
 
-@JsonIgnoreProperties
+@JsonIgnoreProperties(ignoreUnknown = true)
 @Data
 public class Value {
     private Long Id;
